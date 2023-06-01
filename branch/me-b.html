@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>DG</title>
+  <link href="../img/cb.png" rel="sortcut icon" type="img/png" />
+  <script src="https://kit.fontawesome.com/44200a4b26.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    
+      <!--navbar-->
+    
+  <section id="header">
+       <div class="logo-title">
+          <img src="../img/Cb.png" class="logo" alt="">
+          <h4>Diploma<br>Guide</h4>
+      </div>
+    <div id="nav-con">
+    <nav id="navbar-list">
+    <ul id="MenuItem">
+      <li><a  href="../index.html">Home</a></li>
+      <li><a class="active" href="#">Notes</a></li>
+      <li><a href="../about.html">About Us</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+    </nav>
+    <div id="mobile">
+      <i class="fa-solid fa-bars" id="menu-icon"  alt=""
+      onclick="menutoggle()"></i>
+    </div>
+    </div>
+  </section>
+  
+   <!--hero-->
+  
+  <section id="hero" class="me-h">
+    <!-- <h1>computer science<br> electronics engineering</h1>
+    <h4>auto mobile civil etc</h4>
+    <button href="#">Get started</button> -->
+  </section>
+
+  <!--SEM-->
+  
+  <section id="product1" class="section-p1">
+      <div id="h2">
+          <h2>Mechanical Engineering</h2>
+      </div>
+      <div class="pro-container">
+          <div class="pro"  data-aos="fade-right">
+              <a href="../ME/1st-me.html"><h4>1st SEM</h4></a>
+          </div>
+          
+           <div class="pro"  data-aos="fade-left">
+             <a href="../ME/2nd-me.html"><h4>2nd SEM</h4></a>
+          </div>
+          
+           <div class="pro"  data-aos="fade-right">
+              <a href="../ME/3rd-me.html"><h4>3rd SEM</h4></a>
+          </div>
+          
+           <div class="pro"  data-aos="fade-left">
+             <a href="../ME/4th-me.html"> <h4>4th SEM</h4></a>
+          </div>
+          <!--           
+ <div class="pro"  data-aos="fade-right">
+   <a href="../ME/5th-me.html"> <h4>5th SEM</h4></a>
+</div>
+
+ <div class="pro"  data-aos="fade-left">
+    <a href="../AT/6st-at.html"><h4>6th SEM</h4></a>
+</div> -->
+            <div class="select-menu" data-aos="fade-right">
+        <div class="select-btn">
+            <span class="sBtn-text"> <h4>C-20 Syllabus</h4></span>
+            <i class="fa-solid fa-caret-down"></i>
+        </div>
+
+        <ul class="options">
+            <li class="option">
+              <a href="../PDF/C-20 syllabus/ME Syllabus/ME 1/C_20_DME_1_2_Sem.pdf" download><span class="option-text"><h4>1st Year</h4></span></a>  
+            </li>
+            <li class="option">
+              <a href="../PDF/C-20 syllabus/ME Syllabus/ME 2/C_20_ME_3_4_Sem.pdf"> <span class="option-text"><h4>2nd Year</h4></span></a> 
+            </li>
+            <li class="option">
+               <a href="../PDF/C-20 syllabus/ME Syllabus/ME 3/C20_5_6_sem_ME.pdf"><span class="option-text"><h4>3rd Year</h4></span></a>
+            </li>
+        </ul>
+    </div>
+
+    </div>
+  </section>
+
+<!--footer-->
+<footer >
+
+  <div class="contact">
+    <h4>Contact</h4><br>
+    <p>Phone : +91 78926 40654</p>
+    <p>Email : runshaw.technologies@gmail.com</p>
+    <p>Address : 2nd Floor,<br>MC complex, Chamundeshwari<br> Nagara Mandya 571401</p>
+  </div>
+  
+  <div class="about">
+  <h4>About</h4>
+  <br>
+    <p>We are One-Stop solution for all<br>your learning Skills and new<br>technology enchancements.</p>
+  </div>
+  
+  <div class="follow">
+    <h4>Follow Us</h4><br>
+    
+   
+    <div class="icon-con">
+        
+      <div class="button">
+        <div class="icon">
+     <a href="https://runshaw.in/"> <i class="fa-solid fa-globe"></i></a> 
+        </div>
+        <span>RunShaw</span>
+     </div>
+     
+     <div class="button">
+        <div class="icon">
+      <a href="https://in.linkedin.com/company/runshaw-technologies"><i class="fa-brands fa-linkedin-in"></i></i></a>
+        </div>
+        <span>Linkedin</span>
+     </div>
+     
+     <div class="button">
+        <div class="icon">
+        <a href="https://www.instagram.com/runshaw_technologies/?hl=en">  <i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <span>Instagram</span>
+     </div>
+    </div>
+  
+    </div>
+  
+  </div>
+  
+  
+  
+  </footer>
+  
+
+
+    <script>
+    var MenuItem = document.getElementById("MenuItem");
+
+    MenuItem.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItem.style.maxHeight == "0px")
+        {
+            MenuItem.style.maxHeight = "100vh";
+        }
+        else{
+     
+            MenuItem.style.maxHeight = "0px";
+        }
+    }
+    
+    
+    
+    const optionMenu = document.querySelector(".select-menu"),
+       selectBtn = optionMenu.querySelector(".select-btn"),
+       options = optionMenu.querySelectorAll(".option"),
+       sBtn_text = optionMenu.querySelector(".sBtn-text");
+
+selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
+
+options.forEach(option =>{
+    option.addEventListener("click", ()=>{
+        let selectedOption = option.querySelector(".option-text").innerText;
+        sBtn_text.innerText = selectedOption;
+
+        optionMenu.classList.remove("active");
+    })
+})
+    
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+         duration: 1000,
+         offset:200
+    });
+  </script>
+
+  
+</body>
+</html>

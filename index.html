@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://kit.fontawesome.com/44200a4b26.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>DG</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="img/cb.png" rel="sortcut icon" type="img/png" />
+</head>
+
+<body>
+
+    <!--navbar-->
+
+    <section id="header">
+        <div class="logo-title">
+            <img src="img/Cb.png" class="logo" alt="">
+            <h4>Diploma<br>Guide</h4>
+        </div>
+
+        <div id="nav-con">
+
+            <nav id="navbar-list">
+                <ul id="MenuItem">
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div id="mobile">
+                <i class="fa-solid fa-bars" id="menu-icon" alt=""
+                    onclick="menutoggle()"></i>
+
+            </div>
+        </div>
+    </section>
+
+    <!--hero-->
+
+    <section id="hero">
+        <h1>Empower Your Learning<br>with Our Comprehensive<br>Tech Resourses</h1><br>
+        <h4>Learn Smarter,Not Harder With Our Resourses</h4>
+        <a href="#product1"><button>Get started</button></a>
+    </section>
+
+
+    <!--branches-->
+
+    <section id="product1" class="section-p1">
+
+        <h2>Diploma Notes For Students</h2>
+
+        <div class="pro-container">
+
+            <div class="pro" data-aos="flip-right">
+                <img src="img/cs.jpg" alt="">
+                <div class="des">
+                    <h4>Computer Science & Engineering</h4>
+                </div>
+                <div>
+                    <button><a href="./branch/cs-b.html">Get Notes</a></button>
+                </div>
+            </div>
+
+
+
+            <div class="pro" data-aos="flip-right">
+                <img src="img/me.jpg" alt="">
+                <div class="des">
+                    <h4>Mechanical Engineering</h4>
+                </div>
+                <div>
+                    <button><a href="./branch/me-b.html">Get Notes</a></button>
+                </div>
+            </div>
+
+
+
+            <div class="pro" data-aos="flip-right">
+                <img src="img/ce.jpg" alt="">
+                <div class="des">
+                    <h4>Civil Engineering</h4>
+                </div>
+                <div>
+                    <button><a href="./branch/ce-b.html">Get Notes</a></button>
+                </div>
+            </div>
+
+
+
+            <div class="pro" data-aos="flip-right">
+                <img src="img/ec.jpg" alt="">
+                <div class="des">
+                    <h4>Electronics & Communication Engineering</h4>
+                </div>
+                <div>
+                    <button><a href="./branch/ec-b.html">Get Notes</a></button>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="pro" data-aos="flip-right">
+                <img src="img/ee.jpg" alt="">
+                <div class="des">
+                    <h4>Electrical & Electronics Engineering</h4>
+                </div>
+                <div>
+                    <button><a href="./branch/ee-b.html">Get Notes</a></button>
+                </div>
+            </div>
+
+
+
+            <div class="pro" data-aos="flip-right">
+                <img src="img/at.jpg" alt="">
+                <div class="des">
+                    <h4>Automobile Engineering</h4>
+                </div>
+                <div>
+                    <button><a href="./branch/at-b.html">Get Notes</a></button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!--scroll To Top-->
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+
+
+    <!--footer-->
+    <footer>
+        <div class="contact">
+            <h4>Contact</h4><br>
+            <p>
+                Phone : +91 78926 40654
+            </p>
+            <p>
+                Email : runshaw.technologies@gmail.com
+            </p>
+            <p>
+                Address : 2nd Floor,<br>MC complex, Chamundeshwari<br> Nagara Mandya 571401
+            </p>
+        </div>
+
+        <div class="about">
+            <h4>About</h4>
+            <br>
+            <p>
+                We are One-Stop solution for all<br>your learning Skills and new<br>technology enchancements.
+            </p>
+        </div>
+
+        <div class="follow">
+            <h4>Follow Us</h4><br>
+
+            <div class="icon-con">
+
+                <div class="button">
+                    <div class="icon">
+                        <a href="https://runshaw.in/"> <i class="fa-solid fa-globe"></i></a>
+                    </div>
+                    <span>RunShaw</span>
+                </div>
+
+                <div class="button">
+                    <div class="icon">
+                        <a href="https://in.linkedin.com/company/runshaw-technologies"><i class="fa-brands fa-linkedin-in"></i></i></a>
+                </div>
+                <span>Linkedin</span>
+            </div>
+
+            <div class="button">
+                <div class="icon">
+                    <a href="https://www.instagram.com/runshaw_technologies/?hl=en">  <i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <span>Instagram</span>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script>
+    var MenuItem = document.getElementById("MenuItem");
+
+    MenuItem.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if (MenuItem.style.maxHeight == "0px") {
+            MenuItem.style.maxHeight = "100vh";
+        } else {
+
+            MenuItem.style.maxHeight = "0px";
+        }
+    }
+
+    //scroll To Top
+
+    const toTop = document.querySelector(".to-top");
+
+    window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 100) {
+            toTop.classList.add("active");
+        } else {
+            toTop.classList.remove("active");
+        }
+    })
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        offset: 100
+    });
+</script>
+
+
+</body>
+</html>
